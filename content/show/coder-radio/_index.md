@@ -5,14 +5,14 @@ date = "2022-05-10T04:10:01-05:00"
 draft = false
 categories = ["Coder Radio"]
 show = "coder-radio"
-hosts = ["chris","michael", "wes"]
+hosts = ["jamie","michael", "wes"]
 
 type = "show"
 active = true
 
 header_image = "/images/shows/coder-radio.png"
 
-podverse_podcast_id = "ZXd_1Ojd9"
+podverse_podcast_id = "l6X7KZWlZq"
 
 [links.twitter]
   url = "https://twitter.com/coderradioshow"
