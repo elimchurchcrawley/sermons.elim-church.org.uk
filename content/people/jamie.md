@@ -8,6 +8,6 @@ linkedin: null
 title: Jamie Lavery
 twitter: https://twitter.com/jamielavery_
 type: host
-username: Jamie
+username: jamie
 youtube: https://youtube.com/elimchurchcrawley
 ---
