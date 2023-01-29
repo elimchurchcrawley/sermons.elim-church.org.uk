@@ -4,7 +4,7 @@
 {{ with .Site.GetPage "/episodes/" }}
   <section class="section host-list">
     <div class="container">
-      <h1 class="title">Hosts</h1>
+      <h1 class="title">Preachers</h1>
        <div class="columns is-multiline">
 
           {{ range $index, $hostname := .Params.hosts }}
@@ -21,7 +21,7 @@
 
 <section class="section episode-list">
   <div class="container">
-    <h1 class="title">Latest Episodes</h1>
+    <h1 class="title">Latest Sermons</h1>
      <div class="columns is-multiline">
         {{ range $index, $episode := first 10 (where .Site.Pages "Section" "episodes") }}
               {{ if ne  $episode.Kind "section" }}
