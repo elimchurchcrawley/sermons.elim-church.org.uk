@@ -29,7 +29,7 @@ paginate = 12
 [taxonomies]
   tag = "tags"
   category = "categories"
-  preacher = "preacher"
+  preacher = "preachers"
   guest = "guests"
 
 # Main Menu
