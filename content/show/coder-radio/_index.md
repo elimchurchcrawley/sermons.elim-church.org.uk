@@ -7,7 +7,7 @@ categories = ["Coder Radio"]
 series = "coder-radio"
 preachers = ["jamie","michael", "wes"]
 
-type = "show"
+type = "series"
 active = true
 
 header_image = "/images/shows/coder-radio.png"
