@@ -41,7 +41,7 @@ paginate = 12
 
 [[Menu.Main]]
     name = "Series"
-    identifier = "series"
+    identifier = "Series"
     url = "/series/"
     weight =-90
 
@@ -55,35 +55,35 @@ paginate = 12
     [[Menu.Main]]
         name = "Jupiter EXTRAS"
         identifier = "jupiter-extras"
-        url = "/show/jupiter-extras/"
+        url = "/series/jupiter-extras/"
         weight =92
         parent = "Series"
 
     [[Menu.Main]]
         name = "Linux Action News"
         identifier = "linux-action-news"
-        url = "/show/linux-action-news/"
+        url = "/series/linux-action-news/"
         weight =93
         parent = "Series"
 
     [[Menu.Main]]
         name = "LINUX Unplugged"
         identifier = "linux-unplugged"
-        url = "/show/linux-unplugged/"
+        url = "/series/linux-unplugged/"
         weight =94
         parent = "Series"
 
     [[Menu.Main]]
         name = "Office Hours"
         identifier = "office-hours"
-        url = "/show/office-hours/"
+        url = "/series/office-hours/"
         weight =95
         parent = "Series"
 
     [[Menu.Main]]
         name = "Self-Hosted"
         identifier = "self-hosted"
-        url = "/show/self-hosted/"
+        url = "/series/self-hosted/"
         weight =96
         parent = "Series"
 
