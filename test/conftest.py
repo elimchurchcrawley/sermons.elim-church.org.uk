@@ -34,7 +34,7 @@ def expected_dropdown_items() -> Dict[str,List[Dict[str,str]]]:
             {'href': '/show/self-hosted/', 'title': 'Self-Hosted'},
         ],
         "People": [
-            {'href': '/hosts/', 'title': 'Hosts'},
+            {'href': '/preachers/', 'title': 'Preachers'},
             {'href': '/guests/', 'title': 'Guests'},
         ],
         "Community": [
