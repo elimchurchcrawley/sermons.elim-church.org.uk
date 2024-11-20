@@ -11,7 +11,7 @@
 </div>
 
 {{ $lastUrlElement := index (last 1 (split (delimit (split .Permalink "/") "," "") ",")) 0 }}
-{{ if or (eq $lastUrlElement "hosts") (eq $lastUrlElement "guests") }}
+{{ if or (eq $lastUrlElement "preachers") (eq $lastUrlElement "guests") }}
   <section class="{{ $lastUrlElement }}-list mb-5">
     <div class="container px-4">
        <div class="columns is-multiline">
