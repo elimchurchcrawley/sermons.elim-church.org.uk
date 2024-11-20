@@ -7,7 +7,7 @@ instagram: https://instagram.com/jamielavery
 linkedin: null
 title: Jamie Lavery
 twitter: https://twitter.com/jamielavery_
-type: host
+type: preacher
 username: jamie
 youtube: https://youtube.com/elimchurchcrawley
 ---
