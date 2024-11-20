@@ -1,9 +1,9 @@
 +++
-title = "Hosts"
-description = "Host Page"
+title = "Preachers"
+description = "Preachers"
 date = "2022-05-10T04:10:01-05:00"
 draft = false
-type = "hosts"
+type = "preachers"
 active = true
 
 header_image = "/images/logo.png"
