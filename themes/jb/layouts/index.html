@@ -20,7 +20,7 @@
     <div class="swiper show-slider">
       <div class="swiper-wrapper">
         {{- $all_most_recent := slice -}}
-        {{- range where .Site.Sections ".Title" "Shows" -}}
+        {{- range where .Site.Sections ".Title" "Series" -}}
          {{- range .Pages -}}
           {{ $all_most_recent = $all_most_recent | append ((where .Pages "Type" "episode").ByDate.Reverse | first 1)  }}
          {{- end -}}
