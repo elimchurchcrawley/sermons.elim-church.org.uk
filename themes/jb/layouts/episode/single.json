@@ -1,6 +1,6 @@
 {
   "version": 5,
-      "show": {
+      "Series": {
         "title": "{{.CurrentSection.Title}}",
         "subtitle": "{{.CurrentSection.Description}}",
         "summary": "{{.CurrentSection.Description}}",
