@@ -6,6 +6,6 @@ draft = false
 type = "preachers"
 active = true
 
-header_image = "/images/logo.png"
+header_image = "/images/MAIN_LOGO.svg"
 
 +++

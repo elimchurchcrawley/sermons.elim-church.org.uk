@@ -10,7 +10,7 @@ paginate = 12
 # Footer logo and menu title config
 # footer menus are further down
 [params.footer.logo]
-  image = "/images/logo_no_rocket.svg"
+  image = "/images/LONG_LOGO.svg"
   text = "Jupiter Broadcasting"
   url = "/"
 
@@ -33,7 +33,7 @@ paginate = 12
 
 # Main Menu
 [[Menu.Main]]
-    pre = '<img src="/images/logo_no_rocket.svg" alt="Jupiter Broadcasting logo without Rocket" style="height: 2rem">'
+    pre = '<img src="/images/LONG_LOGO.svg" alt="ELIM CHURCH CRAWLEY LOGO" style="height: 2rem">'
     identifier = "home"
     url = "/"
     weight =-100
