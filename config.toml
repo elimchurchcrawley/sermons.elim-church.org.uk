@@ -93,43 +93,6 @@ paginate = 12
     url = "/preachers/"
     weight =80
 
-# Footer Menu (left)
-[[Menu.FooterLeft]]
-    name = "PeerTube"
-    identifier = "ext-peertube"
-    url = "https://jupiter.tube/"
-    weight = -100
-
-[[Menu.FooterLeft]]
-    name = "YouTube"
-    identifier = "ext-youtube"
-    url = "https://www.youtube.com/user/jupiterbroadcasting"
-    weight = -90
-
-[[Menu.FooterLeft]]
-    name = "Twitter"
-    identifier = "ext-twitter"
-    url = "https://twitter.com/jupitersignal"
-    weight = -80
-
-[[Menu.FooterLeft]]
-    name = "Facebook"
-    identifier = "ext-facebook"
-    url = "http://www.facebook.com/pages/Jupiter-Broadcasting/156241429615"
-    weight = -70
-
-[[Menu.FooterLeft]]
-    name = "Telegram"
-    identifier = "ext-telegram"
-    url = "https://www.jupiterbroadcasting.com/telegram"
-    weight = -60
-
-[[Menu.FooterLeft]]
-    name = "IRC"
-    identifier = "ext-irc"
-    url = "https://kiwiirc.com/client/irc.geekshed.net/?nick=JBLive_?&theme=cli#jupiterbroadcasting"
-    weight = -50
-
 # Footer Menu (center)
 [[Menu.FooterCenter]]
     name = "" # blank to temporarily "hide"
@@ -141,20 +104,9 @@ paginate = 12
 [[Menu.FooterRight]]
     name = "GitHub Issues"
     identifier = "ext-github"
-    url = "https://github.com/JupiterBroadcasting/jupiterbroadcasting.com/issues"
+    url = "https://github.com/elimchurchcrawley/sermons.elim-church.org.uk/issues"
     weight =-200
 
-[[Menu.FooterRight]]
-    name = "Jupiter.Tube Issues"
-    identifier = "ext-github-jupitertube"
-    url = "https://github.com/JupiterBroadcasting/jupiter.tube/issues"
-    weight =-80
-
-[[Menu.FooterRight]]
-    name = "Matrix Issues"
-    identifier = "ext-github-matrix"
-    url = "https://github.com/JupiterBroadcasting/matrix/issues"
-    weight =-190
 
 # Output formats
 
