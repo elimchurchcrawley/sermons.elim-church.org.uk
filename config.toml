@@ -13,8 +13,7 @@ paginate = 12
   image = "/images/logo_no_rocket.svg"
   text = "Jupiter Broadcasting"
   url = "/"
-[params.footer.left]
-  headline = "Get Social"
+
 [params.footer.center]
   headline = "" # blank to temporarily "hide"
 [params.footer.right]
