@@ -16,7 +16,7 @@
     </div>
 
     <div class="column is-one-thirds">
-      <h2 class="title is-3">Shows with {{ $name }}</h2>
+      <h2 class="title is-3">Series with {{ $name }}</h2>
       {{ $initialSections := where .Pages ".Kind" "section"}}
       <!-- If it's empty, it's a guest page...so lookup a different way -->
       {{ if eq 0 ($initialSections | len) }}
@@ -48,7 +48,7 @@
     </div>
   </div>
 
-  <h2 class="title is-3">Latest Episodes with {{ $name }}</h2>
+  <h2 class="title is-3">Latest Sermons with {{ $name }}</h2>
 
   <div class="columns is-multiline">
     {{ range .RegularPages }}
