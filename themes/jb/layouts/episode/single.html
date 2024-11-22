@@ -36,10 +36,9 @@
           </center>
           </div>
         </div>
-      {{ partial "episode/podverseplayer.html" . }}
       {{ partial "episode/mp3player.html" . }}
-      {{ partial "episode/downloadlinks.html" . }}
       {{ partial "episode/youtube.html" . }}
+      {{ partial "episode/downloadlinks.html" . }}
     
       {{ $people_sections := where site.RegularPages "Section" "people" }}
       <div class="tile is-ancestor mt-5">
