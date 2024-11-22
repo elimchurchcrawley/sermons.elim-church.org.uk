@@ -5,3 +5,22 @@
   height: 170px
   width: 100%
   display: flex
+
+.video-container {
+  position: relative;
+  max-width: 80%; /* Adjust this value as necessary */
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  margin: 0 auto; /* Center it horizontally */
+  overflow: hidden;
+  background: #000; /* Optional: for aesthetic purposes */
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
