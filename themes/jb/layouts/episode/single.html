@@ -37,10 +37,7 @@
           </div>
         </div>
       {{ partial "episode/podverseplayer.html" . }}
-      <audio controls>
-        <source src="/mp3/15-09-2024.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
+      {{ partial "episode/mp3player.html" . }}
       {{ partial "episode/downloadlinks.html" . }}
 
       {{ $people_sections := where site.RegularPages "Section" "people" }}
