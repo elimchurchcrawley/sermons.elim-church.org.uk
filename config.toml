@@ -10,7 +10,7 @@ paginate = 12
 # Footer logo and menu title config
 # footer menus are further down
 [params.footer.logo]
-  image = "/images/LONG_LOGO.svg"
+  image = "/images/MAIN_LOGO.svg"
   text = "Jupiter Broadcasting"
   url = "/"
 
