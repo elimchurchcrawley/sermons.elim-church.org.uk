@@ -25,7 +25,7 @@
           <br />
           <p>{{ .Description }} </p>
           {{ partial "episode/mp3player.html" . }}
-          {{ partial "episode/youtube.html" . }}    
+          {{ partial "episode/downloadlinks.html" . }}
         </div>
           <div class="column is-4">
             <center>
@@ -38,8 +38,8 @@
           </center>
           </div>
       </div>
-      {{ partial "episode/downloadlinks.html" . }}
-    
+      {{ partial "episode/youtube.html" . }}    
+
       {{ $people_sections := where site.RegularPages "Section" "people" }}
       <div class="tile is-ancestor mt-5">
         <div class="tile is-parent is-vertical is-8">
