@@ -24,9 +24,9 @@
           <!-- {{ partial "episode/videoplayer.html" . }} -->
           <br />
           <p>{{ .Description }} </p>
-          </div>
           {{ partial "episode/mp3player.html" . }}
           {{ partial "episode/youtube.html" . }}    
+        </div>
           <div class="column is-4">
             <center>
               <a href="{{ .Permalink }}">
@@ -37,7 +37,7 @@
               {{ partial "episode/subscribe.html" . }}
           </center>
           </div>
-        </div>
+      </div>
       {{ partial "episode/downloadlinks.html" . }}
     
       {{ $people_sections := where site.RegularPages "Section" "people" }}
