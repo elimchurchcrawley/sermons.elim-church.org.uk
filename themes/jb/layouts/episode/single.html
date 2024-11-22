@@ -40,16 +40,17 @@
       {{ partial "episode/mp3player.html" . }}
       {{ partial "episode/downloadlinks.html" . }}
 
-{{ if .Params.youtube_link }}
-  <iframe width="560" height="315" 
-          src="{{ .Params.youtube_link | replace "watch?v=" "embed/" }}" 
-          title="YouTube video player" 
-          frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-          allowfullscreen>
-  </iframe>
-{{ end }}
-
+      {{ if .Params.youtube_link }}
+      {{ $embedUrl := .Params.youtube_link | replace "watch?v=" "embed/" }}
+      <iframe width="560" height="315" 
+              src="{{ $embedUrl }}" 
+              title="YouTube video player" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen>
+      </iframe>
+    {{ end }}
+    
       {{ $people_sections := where site.RegularPages "Section" "people" }}
       <div class="tile is-ancestor mt-5">
         <div class="tile is-parent is-vertical is-8">
