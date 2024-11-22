@@ -41,7 +41,8 @@
       {{ partial "episode/downloadlinks.html" . }}
 
       {{ if .Params.youtube_link }}
-      {{ $embedUrl := .Params.youtube_link | replace "watch?v=" "embed/" }}
+      {{ $youtubeLink := .Params.youtube_link }}
+      {{ $embedUrl := $youtubeLink | strings.Replace "watch?v=" "embed/" 1 }}
       <iframe width="560" height="315" 
               src="{{ $embedUrl }}" 
               title="YouTube video player" 
@@ -49,7 +50,7 @@
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
               allowfullscreen>
       </iframe>
-    {{ end }}
+    {{ end }}   
     
       {{ $people_sections := where site.RegularPages "Section" "people" }}
       <div class="tile is-ancestor mt-5">
