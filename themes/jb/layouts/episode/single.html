@@ -46,7 +46,7 @@
           <!-- Hosts Section -->
           <div class="tile is-child mb-5 columns is-multiline is-flex-grow-0">
             <div class="column">
-              <h2 class="has-text-centered-mobile">Hosts</h2>
+              <h2 class="has-text-centered-mobile">Preacher</h2>
               <section class="section host-list">
                 <div class="columns is-narrow">
                   {{ range .Params.preachers }}
@@ -87,18 +87,6 @@
           <!-- Sponsors -->
           <div class="tile is-child columns is-flex-grow-0">
             <div class="column">
-              {{ with .Params.sponsors }}
-                <h2>Sponsors</h2>
-                <section class="section sponsor-list">
-                  {{ range . }}
-                    {{ $sponsor := index (where (where site.Pages "Section" "sponsors") "Params.shortname" .) 0 }}
-                    {{ if $sponsor }}
-                      {{ partial "sponsor/small.html" $sponsor }}
-                      <br />
-                    {{ end }}
-                  {{ end }}
-                </section>
-              {{ end }}
             </div>
             <!-- Tags -->
           </div>
