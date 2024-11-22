@@ -1,7 +1,7 @@
-<div class="video-container">
-  <iframe src="{{ .Params.youtube_link | replaceRE "watch\\?v=" "embed/" }}" 
+<div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
+  <iframe src="{{ .Params.youtube_link | replaceRE 'watch\\?v=' 'embed/' }}" 
           frameborder="0" 
-          allowfullscreen="allowfullscreen"
-          width="560" 
-          height="315"></iframe>
+          allowfullscreen="allowfullscreen" 
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+  </iframe>
 </div>
