@@ -39,28 +39,17 @@
       {{ partial "episode/podverseplayer.html" . }}
       {{ partial "episode/mp3player.html" . }}
       {{ partial "episode/downloadlinks.html" . }}
-
-      {{ if .Params.youtube_link }}
-      {{ $youtubeLink := .Params.youtube_link }}
-      {{ $embedUrl := "" }}
+      {% if page.youtube_url %}
+      <div class="youtube-video-container">
+        <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/{{ page.youtube_url | split: 'v=' | last }}" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+        </iframe>
+      </div>
+    {% endif %}
     
-      {{ if strings.Contains $youtubeLink "youtu.be" }}
-        {{ $embedUrl = $youtubeLink | strings.Replace "https://youtu.be/" "https://www.youtube.com/embed/" 1 }}
-      {{ else if strings.Contains $youtubeLink "watch?v=" }}
-        {{ $embedUrl = $youtubeLink | strings.Replace "watch?v=" "embed/" 1 }}
-      {{ else }}
-        {{ $embedUrl = $youtubeLink }} <!-- Default case, just in case -->
-      {{ end }}
-    
-      <iframe width="560" height="315" 
-              src="{{ $embedUrl }}" 
-              title="YouTube video player" 
-              frameborder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-              allowfullscreen>
-      </iframe>
-    {{ end }}
-        
       {{ $people_sections := where site.RegularPages "Section" "people" }}
       <div class="tile is-ancestor mt-5">
         <div class="tile is-parent is-vertical is-8">
