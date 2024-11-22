@@ -42,7 +42,16 @@
 
       {{ if .Params.youtube_link }}
       {{ $youtubeLink := .Params.youtube_link }}
-      {{ $embedUrl := $youtubeLink | strings.Replace "watch?v=" "embed/" 1 }}
+      {{ $embedUrl := "" }}
+    
+      {{ if strings.Contains $youtubeLink "youtu.be" }}
+        {{ $embedUrl = $youtubeLink | strings.Replace "https://youtu.be/" "https://www.youtube.com/embed/" 1 }}
+      {{ else if strings.Contains $youtubeLink "watch?v=" }}
+        {{ $embedUrl = $youtubeLink | strings.Replace "watch?v=" "embed/" 1 }}
+      {{ else }}
+        {{ $embedUrl = $youtubeLink }} <!-- Default case, just in case -->
+      {{ end }}
+    
       <iframe width="560" height="315" 
               src="{{ $embedUrl }}" 
               title="YouTube video player" 
@@ -50,8 +59,8 @@
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
               allowfullscreen>
       </iframe>
-    {{ end }}   
-    
+    {{ end }}
+        
       {{ $people_sections := where site.RegularPages "Section" "people" }}
       <div class="tile is-ancestor mt-5">
         <div class="tile is-parent is-vertical is-8">
